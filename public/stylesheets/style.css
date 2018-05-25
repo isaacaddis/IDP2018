@@ -4,6 +4,10 @@ body,
 	height:100%;
 	font-family: 'Didact Gothic', sans-serif;
 }
+.gif{
+/*	background:url("https://research.cornell.edu/sites/default/files/styles/life_in_the_lab_main_image/public/image_map/JWP_CU-VP-Research_MartyWiedmann_FoodSafety-7826_edit.jpg?itok=G42sn6Fy");
+	background-size:cover;*/
+}
 .scroll-down {
   opacity: 1;
   -webkit-transition: all .5s ease-in 3s;

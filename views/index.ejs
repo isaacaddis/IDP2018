@@ -5,41 +5,41 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
-	<title><%= title %></title>
+	<title>Home - <%= title %></title>
 </head>
-<body class = "gif red lighten-1">
+<body class = "gif ">
+	<%- include navbar.ejs %>
 	<main class = "valign-wrapper row main">
 		<div class = "col s12 14 pull-14">
-			<h1 class="valign center-align white-text"><%= title %></h1>
+			<h1 class="valign center-align red-text"><%= title %></h1>
+			<div class = "container">
+<!-- 			<p class = "center-align red-text">The "What's Eating You?" gallery is one of 5 galleries within the Los Angeles Public Health Museum. The gallery is devoted to educating the public on the past, present and future of Los Angeles Food Safety. Located in a hub of food laboratories and a diverse restaurants, Los Angeles is a prime location for an adventure through taste. The gallery is comprised of 9 multiple exhibits, with topics ranging from pasteurization to genetically-modified organisms. </p> -->
+			</div>
 			<div class = "row center-block center-align">
-				<a class = "red white-text text-lighten-1 btn">Enter Site</a>
-				<span class="typed"></span>
+<!-- 				<a class = "red white-text text-lighten-1 btn">Learn More!</a>
+ -->				<p> Explore: <strong><span class="typed"></span></strong> </p>
 			</div>
 			<div style = "height:20vh;">
-				<a href="#" class="scroll-down" address="true"></a>
+				<a data-scroll href="#footer" class="red text-lighten-1 scroll-down" address="true"></a>
 			</div>
 		</div>
 	</main>
-	<footer class="page-footer">
+	<footer class="red lighten-1 page-footer" id = "footer">
 	  <div class="container">
 	    <div class="row">
-	      <div class="col l6 s12 center-align">
+	      <div class="col s4 center-align">
+	        <h5 class="white-text center-align">Our Mission</h5>
+	        <p class="grey-text text-lighten-4">To serve and educate the public through the presentation, contextualization and interpretation of food safety within the Los Angeles county using interactive and interesting exhibits. </p>
+	      </div>
+	      <div class="col s4 center-align">
 	        <h5 class="white-text center-align">Opening/Closing Hours</h5>
 	        <p class="grey-text text-lighten-4"><i>Open from 12:00 to 8:00PM everyday!.</p>
 	      </div>
-	      <div class = "">
 
-	      <div>
-
-<!-- 	      <div class="col l4 offset-l2 s12">
-	        <h5 class="white-text">Links</h5>
-	        <ul>
-	          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-	          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-	          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-	          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-	        </ul>
-	      </div> -->
+	      <div class="col s4 center-align">
+	        <h5 class="white-text">About Us</h5>
+	        <p>The "What's Eating You?" gallery is one of 5 galleries within the Los Angeles Public Health Museum. The gallery is devoted to educating the public on the past, present and future of Los Angeles Food Safety. Located in a hub of food laboratories and a diverse restaurants, Los Angeles is a prime location for an adventure through taste. The gallery is comprised of 9 multiple exhibits, with topics ranging from pasteurization to genetically-modified organisms. </p>
+	      </div>
 	    </div>
 	  </div>
 	  <div class="footer-copyright">
@@ -48,5 +48,9 @@
 	    </div>
 	  </div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script type="text/javascript">
+	var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
 </body>
 </html>
