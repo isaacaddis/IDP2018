@@ -31,6 +31,13 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 app.get('/illness', routes.illness);
+app.get('/gmos', routes.gmos);
+app.get('/dehydration', routes.dehydration);
+app.get('/fermentation', routes.fermentation);
+app.get('/irradiation', routes.irradiation);
+app.get('/pasteurization', routes.pasteurization);
+app.get('/perservatives', routes.perservatives);
+app.get('/refrigeration', routes.refrigeration);
 
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
