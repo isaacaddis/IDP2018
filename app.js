@@ -36,7 +36,7 @@ app.get('/dehydration', routes.dehydration);
 app.get('/fermentation', routes.fermentation);
 app.get('/irradiation', routes.irradiation);
 app.get('/pasteurization', routes.pasteurization);
-app.get('/perservatives', routes.perservatives);
+app.get('/preservatives', routes.preservatives);
 app.get('/refrigeration', routes.refrigeration);
 
 app.listen(process.env.PORT || 3000, function(){

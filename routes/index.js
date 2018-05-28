@@ -27,8 +27,8 @@ exports.fermentation = function(req, res){
 exports.pasteurization = function(req, res){
   res.render('pasteurization', { title: "What's Eating You?" })
 };
-exports.perservatives = function(req, res){
-  res.render('perservatives', { title: "What's Eating You?" })
+exports.preservatives = function(req, res){
+  res.render('preservatives', { title: "What's Eating You?" })
 };
 exports.refrigeration = function(req, res){
   res.render('refrigeration', { title: "What's Eating You?" })
