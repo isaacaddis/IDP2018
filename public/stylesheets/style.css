@@ -1,7 +1,7 @@
 html,
 body,
 .main{
-	height:100%;
+	height:100vh;
 	font-family: 'Didact Gothic', sans-serif;
 }
 .gif{
