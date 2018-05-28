@@ -8,6 +8,8 @@
       <div class="col s4 center-align">
         <h5 class="white-text">About Us</h5>
         <p>The "What's Eating You?" gallery is one of 5 galleries within the Los Angeles Public Health Museum. The gallery is devoted to educating the public on the past, present and future of Los Angeles Food Safety. Located in a hub of food laboratories and a diverse restaurants, Los Angeles is a prime location for an adventure through taste. The gallery is comprised of 9 multiple exhibits, with topics ranging from pasteurization to genetically-modified organisms. </p>
+        <div class="mapouter center-align center-block"><div class="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=California Academy of Mathematics and Science&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div><style>.mapouter{text-align:right;height:400px;width:400px;}.gmap_canvas
+        {overflow:hidden;background:none!important;height:400px;width:400px;}</style><small>Google Map by <a href="https://www.embedgooglemap.net">EmbedGoogleMap.net</a></small></div>
       </div>
       <div class="col s4 center-align">
         <h5 class="white-text center-align">Opening/Closing Hours</h5>
@@ -23,3 +25,13 @@
     </div>
   </div>
 </footer>
+  document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+              var instances = M.Sidenav.init(elems, options);
+                });
+
+    // Or with jQuery
+
+      $(document).ready(function(){
+              $('.sidenav').sidenav();
+                });

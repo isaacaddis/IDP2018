@@ -33,6 +33,8 @@ exports.preservatives = function(req, res){
 exports.refrigeration = function(req, res){
   res.render('refrigeration', { title: "What's Eating You?" })
 };
-
+exports.workscited = function(req,res){
+    res.render('workscited', {title: "What's Eating You?"})
+}
 
 
