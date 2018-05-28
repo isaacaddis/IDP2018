@@ -35,6 +35,6 @@ exports.refrigeration = function(req, res){
 };
 exports.workscited = function(req,res){
     res.render('workscited', {title: "What's Eating You?"})
-}
+};
 
 
