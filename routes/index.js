@@ -36,5 +36,8 @@ exports.refrigeration = function(req, res){
 exports.workscited = function(req,res){
     res.render('workscited', {title: "What's Eating You?"})
 };
+exports.simulation = function(req,res){
+    res.render('simulation',{title:"What's Eating You"})
+};
 
 

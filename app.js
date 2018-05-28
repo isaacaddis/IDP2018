@@ -39,6 +39,7 @@ app.get('/pasteurization', routes.pasteurization);
 app.get('/preservatives', routes.preservatives);
 app.get('/refrigeration', routes.refrigeration);
 app.get('/workscited', routes.workscited);
+app.get('/simulation',routes.simulation);
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+      <meta name="generator" content=
+         "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+      <title>Simulation (Irradiation) - <%= title %></title>
+   </head>
+   <body>
+      <%- include navbar.ejs %>
+      <h1 class="center-align">Simulation of Stawberry Spoilage </h1>
+      <h5 class = "center-align light">Control the position of the simulation using the slider below!</h5>
+      <div class="container">
+         <div class="center-block center-align">
+            <div id = "video" style = "padding-top:10vh"></div>
+            <div class = "container">
+               <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <p>Value: <span id="demo"></span></p>
+               </div>
+            </div>
+            <!--         <iframe width="560" height="315" src=
+               "https://www.youtube.com/embed/dW2EIUZ_0Ew?start=17;autoplay=1"
+               frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
+            <script>
+               let start;
+               let link = "https://www.youtube.com/embed/dW2EIUZ_0Ew?start="+String(start);
+               $('#video').html('<iframe width="450px" height="350px" src='+link+' frameborder="0" allow = "autoplay" allowfullscreen=""></iframe>');
+               var slider = document.getElementById("myRange");
+               var output = document.getElementById("demo");
+               output.innerHTML = slider.value;
+               
+               slider.oninput = function() {
+               output.innerHTML = this.value;
+               start = this.value;
+               link = "https://www.youtube.com/embed/dW2EIUZ_0Ew?autoplay=1&start="+String(start);
+               $('#video').html('<iframe width="450px" height="350px" src='+link+' frameborder="0" allow = "autoplay" allowfullscreen=""></iframe>');
+               }
+            </script>
+         </div>
+      </div>
+      <%- include footer.ejs %>
+   </body>
+</html>
