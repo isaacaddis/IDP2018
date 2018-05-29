@@ -1,99 +1,101 @@
 html,
 body,
-.main{
-	height:100vh;
+.main {
+	height: 100vh;
 	font-family: 'Didact Gothic', sans-serif;
 }
-.gif{
-/*	background:url("https://research.cornell.edu/sites/default/files/styles/life_in_the_lab_main_image/public/image_map/JWP_CU-VP-Research_MartyWiedmann_FoodSafety-7826_edit.jpg?itok=G42sn6Fy");
-	background-size:cover;*/
-}
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
+
+.gif {
+		background:url("../images/la.jpg");
+	background-size:cover;
 }
 
 .scroll-down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  transform: scale(1)
+	opacity: 1;
+	-webkit-transition: all .5s ease-in 3s;
+	transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -16px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid #FFF;
+	background-size: 14px auto;
+	border-radius: 50%;
+	z-index: 2;
+	-webkit-animation: bounce 2s infinite 2s;
+	animation: bounce 2s infinite 2s;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	transform: scale(1)
 }
 
 .scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
+	position: absolute;
+	top: calc(50% - 8px);
+	left: calc(50% - 6px);
+	transform: rotate(-45deg);
+	display: block;
+	width: 12px;
+	height: 12px;
+	content: "";
+	border: 2px solid white;
+	border-width: 0px 0 2px 2px;
 }
 
 @keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
+	0%,
+	100%,
+	20%,
+	50%,
+	80% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
 }
+
 .slider {
-        -webkit-appearance: none;
-            width: 100%;
-                height: 15px;
-                    border-radius: 5px;   
-                        background: #d3d3d3;
-                            outline: none;
-                                opacity: 0.7;
-                                    -webkit-transition: .2s;
-                                        transition: opacity .2s;
-                                    }
+	-webkit-appearance: none;
+	width: 100%;
+	height: 15px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
 
-                                    .slider::-webkit-slider-thumb {
-                                            -webkit-appearance: none;
-                                                appearance: none;
-                                                    width: 25px;
-                                                        height: 25px;
-                                                            border-radius: 50%; 
-                                                                background: #4CAF50;
-                                                                    cursor: pointer;
-                                                                }
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
+}
 
-                                                                .slider::-moz-range-thumb {
-                                                                        width: 25px;
-                                                                            height: 25px;
-                                                                                border-radius: 50%;
-                                                                                    background: #4CAF50;
-                                                                                        cursor: pointer;
-                                                                                    }
-
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #4CAF50;
+	cursor: pointer;
+}
