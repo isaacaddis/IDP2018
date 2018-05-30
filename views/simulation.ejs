@@ -9,9 +9,14 @@
       <%- include navbar.ejs %>
       <h1 class="center-align">Simulation of Stawberry Spoilage </h1>
       <h5 class = "center-align light">Control the position of the simulation using the slider below!</h5>
+      <p class = "center-align"><strong>Note: Start the simulation by dragging the position of the slider to where in the simulation you would like for it to be.</strong> </p>
       <div class="container">
+         <div class = "">
+         <div class = "">
          <div class="center-block center-align">
-            <div id = "video" style = "padding-top:10vh"></div>
+            <video id = "vid" muted height = "400px" width = "500px">
+                <source src = "images/timelapse.mp4" />
+            </video>
             <div class = "container">
                <div class="slidecontainer">
                   <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
@@ -22,21 +27,28 @@
                "https://www.youtube.com/embed/dW2EIUZ_0Ew?start=17;autoplay=1"
                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
             <script>
-               let start;
-               let link = "https://www.youtube.com/embed/dW2EIUZ_0Ew?start="+String(start);
-               $('#video').html('<iframe width="450px" height="350px" src='+link+' frameborder="0" allow = "autoplay" allowfullscreen=""></iframe>');
+               let vid = document.getElementById("vid");
+               vid.removeAttribute("controls");
+               vid.play();
+               //let start;
+               //let link = "https://www.youtube.com/embed/dW2EIUZ_0Ew?controls=0&start="+String(start);
+               //$('#video').html('<iframe width="450px" height="350px" src='+link+' frameborder="0" allow = "autoplay" allowfullscreen=""></iframe>');
                var slider = document.getElementById("myRange");
                var output = document.getElementById("demo");
                output.innerHTML = slider.value;
                
                slider.oninput = function() {
                output.innerHTML = this.value;
-               start = this.value;
-               link = "https://www.youtube.com/embed/dW2EIUZ_0Ew?autoplay=1&start="+String(start);
-               $('#video').html('<iframe width="450px" height="350px" src='+link+' frameborder="0" allow = "autoplay" allowfullscreen=""></iframe>');
+               //start = this.value;
+               //link = "https://www.youtube.com/embed/dW2EIUZ_0Ew?autoplay=1&controls=0&start="+String(start);
+               //$('#video').html('<iframe width="450px" height="350px" src='+link+' frameborder="0" allow = "autoplay" allowfullscreen=""></iframe>');
+               vid.currentTime = this.value;
+               vid.play();
                }
             </script>
          </div>
+     </div>
+     </div>
       </div>
       <%- include footer.ejs %>
    </body>
